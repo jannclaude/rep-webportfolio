@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Custom Code */
+h2 {
+    font-family: 'DM Sans', sans-serif;
+}
+a:visited, a:link {
+    text-decoration: none;
+    color: #ededed;
+    position: relative;
+}
+
+a::before {
+    content: '';
+    background-color: #6da29e;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 100%;
+    height: 0px;
+    z-index: -1;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+a:hover::before {
+    bottom: 8px;
+    height: 24px;
+}
+
+body.modal-open .supreme-container {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.media-body {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card-img-top {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.theme-color-1 {
+    background-color: #292929;
+    border: 1px solid #4a4a4a;
+}
+
+.theme-color-2 {
+    background-color: #6da29e !important;
+}
+
+.background-box {
+    position: absolute;
+    z-index: 0;
+    background: #000000 url('./images/stars_background.png') repeat top center;
+    background-attachment: fixed;
+    top: 0px;
+    padding: 2rem;
+    height: 100%;
+}
+
+.blur {
+    -webkit-mask-image: linear-gradient(black, black, transparent);
+    backdrop-filter: blur(6px);
+    height: 23vh;
+    width: 100vw;
+    left: -0.5rem;
+    position: absolute;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.blurred-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.square {
+    width: 15%;
+    margin: 3px;
+}
+
+#about-me {
+    margin-top: 36rem;
+    z-index: 1;
+}
+
+#about-me img {
+    width: 10%;
+    margin-bottom: 10px;
+    margin-right: 18px;
+}
+
+#projects {
+    margin-top: 4rem;
+    z-index: 1;
+}
+
+#tools {
+    margin-top: 4rem;
+}
+
+#contact-me {
+    margin-top: 4rem;
+}
+
+
+/* End of Custom Code */
+
+/* Typewriter Animation */
+.name-ani{
+    position: relative;  
+    width: 7.5em;
+    margin: 0 auto;
+    font-family: 'IBM Plex Sans Medium 500', sans-serif;
+    border-right: 2px solid #ededed;
+    font-size: 100%;
+    color: #ededed;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;   
+}
+
+.anim-typewriter{
+  animation: typewriter 1s steps(13, end) 1s 1 normal both,
+             blinkTextCursor 700ms steps(13) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 7em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: #ededed;}
+  to{border-right-color: transparent;}
+}
+/* End of Typewriter Animation */
+
+
+/* Twinkling Animation */
+.twinkling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: transparent url('./images/stars.png') repeat top center;
+    z-index: 1;
+    animation: move-twinkling-back 200s linear infinite;
+}
+
+@keyframes move-twinkling-back {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+/* End of Twinkling Animation */
+
+
+/* Flipping Card Animation */
+::selection{
+    color: #fff;
+    background: #1cc7d0;
+}
+
+#landing {
+    height: 400px;
+    width: 320px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+#landing .card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    background: linear-gradient(375deg, #d3e6da, #ededed);
+    margin-top: 150px;
+    border-radius: 10px;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+
+#landing:hover > .front-face {
+    transform: rotateY(-180deg);
+}
+
+#landing .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#landing .back-face{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+
+#landing:hover > .back-face {
+    transform: rotateY(0deg);
+}
+
+#landing .back-face img {
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 50%;
+    background: linear-gradient(375deg, #6da29e, #a9dbd7);
+}
+
+#landing .back-face .info{
+    text-align: center;
+}
+
+.back-face .info .title{
+    font-size: 25px;
+    font-weight: 600;
+}
+/* End of Flipping Animation */
