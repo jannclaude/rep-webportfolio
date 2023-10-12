@@ -9,10 +9,15 @@
 h2 {
     font-family: 'DM Sans', sans-serif;
 }
-a:visited, a:link {
+a:link {
     text-decoration: none;
     color: #ededed;
     position: relative;
+}
+
+a:onclick {
+    bottom: 8px;
+    height: 24px;
 }
 
 a::before {
@@ -32,6 +37,9 @@ a:hover::before {
     bottom: 8px;
     height: 24px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body.modal-open .supreme-container {
     -webkit-filter: blur(1px);
@@ -39,6 +47,12 @@ body.modal-open .supreme-container {
     -o-filter: blur(1px);
     -ms-filter: blur(1px);
     filter: blur(1px);
+}
+
+.modal {
+    --bs-modal-bg: #292929 !important;
+    --bs-modal-header-border-color: #4a4a4a !important;
+    --bs-modal-footer-border-color: #4a4a4a !important;
 }
 
 .media {
@@ -146,10 +160,18 @@ body.modal-open .supreme-container {
     margin-top: 4rem;
 }
 
+#tools img {
+    width: 40px;
+}
+
 #contact-me {
     margin-top: 4rem;
 }
 
+#footer-id {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+}
 
 /* End of Custom Code */
 

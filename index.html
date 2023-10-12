@@ -33,7 +33,7 @@
 			</button>
 			<div class="collapse navbar-collapse " id="navbarNavAltMarkup">
 				<div class="navbar-nav ms-auto gap-1">
-					<a class="nav-link active" aria-current="page" href="#about-me">&nbsp;About Me&nbsp;</a>
+					<a class="nav-link" aria-current="page" href="#about-me">&nbsp;About Me&nbsp;</a>
 					<a class="nav-link" href="#projects">&nbsp;Projects&nbsp;</a>
 					<a class="nav-link" href="#tools">&nbsp;Tools&nbsp;</a>
 					<a class="nav-link" href="#contact-me">&nbsp;Contact Me&nbsp;</a>
@@ -78,7 +78,7 @@
 	<!-- Projects Section -->
 	<section>
 		<div id="projects" class="container-fluid theme-color-1 rounded-4 text-white p-3 p-md-5">
-			<h2><strong>My Projects</strong></h2>
+			<h2 class="mb-4"><strong>My Projects</strong></h2>
 
 			<!-- Other Projects Section Start -->
 			<div class="p-md-4 row justify-content-center gap-4">
@@ -127,27 +127,30 @@
 
 	<!-- Tools and Contact Section -->
 	<section class="d-flex flex-row row">
-		<div id="tools" class="media col-lg-4">
+		<div id="tools" class=" media col-lg-4">
 			<div class="media-body theme-color-1 text-white p-5 rounded-4">
-				<h2><strong>Tools and Languages</strong></h2>
+				<h2><strong>Tools & Languages</strong></h2>
 				<div class="d-flex flex-column align-items-center mt-4">
-                    <div class="d-flex flex-md-column gap-1" >
-                        <div class="d-md-flex justify-content-center">
-                        	<img width="150" src="images/logo-html5.png" class="square bg-light rounded-4 " />
-	                        <img width="150" src="images/logo-css3.png" class="square bg-light rounded-4"/>
-	                        <img width="150" src="images/logo-javascript.png" class="square bg-light rounded-4"/>
-	                        <img width="150" src="images/logo-mongodb.png" class="square bg-light rounded-4"/>
-	                        <img width="150" src="images/logo-nodejs.png" class="square bg-light rounded-4"/>
-	                        <img width="150" src="images/logo-expressjs.png" class="square bg-light rounded-4"/>
+                    <div class=" d-flex flex-md-row column-gap-2" >
+                        <div class="d-md-flex justify-content-center flex-md-column text-center">
+                        	<img src="images/logo-html5.png" class="mt-2 bg-light rounded-4 " />
+	                        <img src="images/logo-css3.png" class="mt-2 bg-light rounded-4"/>
+	                        <img src="images/logo-javascript.png" class="mt-2 bg-light rounded-4"/>
+	                        <img src="images/logo-mongodb.png" class="mt-2 bg-light rounded-4"/>
                         </div>
 
-                        <div class="d-md-flex justify-content-center">
-                        	<img width="150" src="images/logo-react.png" class="square bg-light rounded-4"/>
-	                        <img width="150" src="images/logo-heroku.png" class="square bg-light rounded-4"/>
-	                        <img width="150" src="images/logo-git.png" class="square bg-light rounded-4"/>
-	                        <img width="150" src="images/logo-sublime-text-3.png" class="square bg-light rounded-4"/>
-	                        <img width="150" src="images/logo-postman.png" class="square bg-light rounded-4"/>
-	                        <img width="150" src="images/logo-gitlab-ci-cd.png" class="square bg-light rounded-4"/>
+                        <div class="d-md-flex justify-content-center flex-md-column text-center">
+                        	<img src="images/logo-nodejs.png" class="mt-2 bg-light rounded-4"/>
+	                        <img src="images/logo-expressjs.png" class="mt-2 bg-light rounded-4"/>
+	                        <img src="images/logo-react.png" class="mt-2 bg-light rounded-4"/>
+	                        <img src="images/logo-heroku.png" class="mt-2 bg-light rounded-4"/>
+                        </div>
+
+                        <div class="d-md-flex justify-content-center flex-md-column text-center">
+	                        <img src="images/logo-git.png" class="mt-2 bg-light rounded-4"/>
+	                        <img src="images/logo-sublime-text-3.png" class="mt-2 bg-light rounded-4"/>
+	                        <img src="images/logo-postman.png" class="mt-2 bg-light rounded-4"/>
+	                        <img src="images/logo-gitlab-ci-cd.png" class="mt-2 bg-light rounded-4"/>
                         </div>
                     </div>
                 </div>
@@ -165,47 +168,43 @@
 						<form class="p-sm-2 p-md-4 w-100">
 							<p class="mb-4">If you'd like to talk, please fill out the form below with as much details as possible and I'll be in touch!</p>
 							<div class="form-group mb-3">
-								<label for="exampleFormControlInput1">Name</label>
-								<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Name">
+								<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name*">
 							</div>
 							<div class="form-group mb-3">
-								<label for="exampleFormControlInput1">Email Address</label>
-								<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+								<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address*">
 							</div>
-							<div class="form-group mb-3">
-								<label for="exampleFormControlInput1">Contact Number</label>
-								<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+63 900 000 0000">
+							<div class="input-group mb-3">
+								<span class="input-group-text" id="basic-addon1">@</span>
+								<input type="text" class="form-control" placeholder="Social Media Handle" aria-label="Username" aria-describedby="basic-addon1">
 							</div>
-							<div class="form-group mb-3">
-								<label for="exampleFormControlSelect1">Enquiry</label>
-								<select class="form-control" id="exampleFormControlSelect1">
-									<option>Enquiry Type</option>
-									<option>Web Development</option>
-									<option>Consulting</option>
-									<option>Collaboration</option>
-									<option>General</option>
+							<div class="form-floating mb-3 mt-4">
+								<select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+									<option value="1" selected>Web Development</option>
+									<option value="2">Consulting</option>
+									<option value="3">Collaboration</option>
+									<option value="4">General</option>
 								</select>
+								<label for="floatingSelect">Choose an Enquiry</label>
 							</div>
 							<div class="form-group mb-3">
-								<label for="exampleFormControlTextarea1">Message</label>
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="5">Write something...</textarea>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Write message..."></textarea>
 							</div>
-							<button type="button" class="btn theme-color-2" data-toggle="modal" data-target="#modalDiv">Send</button>
+							<button id="send-button" type="button" class="btn text-white theme-color-2 w-25 mx-auto" data-toggle="modal" data-target="#modalDiv">Send</button>
 
 							<div id="modalDiv" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog theme-color-1">
+								<div class="modal-dialog">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title fs-5 text-dark">Enquiry Sent!</h5>
-											<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
+											<h5 class="modal-title fs-5 text-white">Enquiry Sent!</h5>
+											<button type="button" class="btn-close btn-close-white" data-dismiss="modal" aria-label="Close">
+												<!-- <span aria-hidden="true">&times;</span> -->
 											</button>
 										</div>
-										<div class="modal-body text-dark">
+										<div class="modal-body text-white">
 											<p>Thank you for reaching out. Your enquiry is acknowledged. I hope you have a great day! </p>
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn theme-color-2" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
@@ -220,8 +219,8 @@
 
 	
 
-	<footer class="theme-color-1 text-white text-center pt-3 mt-4 rounded-4">
-		<p> © Copyright 2023 Jann Claude. All Rights Reserved.</p>
+	<footer id="footer-id" class="d-flex justify-content-center theme-color-1 text-white text-center p-3 rounded-4">
+		<div> © Copyright 2023 Jann Claude. All Rights Reserved.</div>
 	</footer>
 
 	
@@ -232,4 +231,5 @@
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
+
 </html>
