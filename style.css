@@ -141,7 +141,7 @@ body.modal-open .supreme-container {
 }
 
 #about-me {
-    margin-top: 36rem;
+    margin-top: 27rem;
     z-index: 1;
 }
 
@@ -215,6 +215,7 @@ body.modal-open .supreme-container {
     height: 100%;
     display: block;
     background: transparent url('./images/stars.png') repeat top center;
+    background-attachment: fixed;
     z-index: 1;
     animation: move-twinkling-back 200s linear infinite;
 }
