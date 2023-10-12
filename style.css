@@ -37,6 +37,7 @@ a:hover::before {
     bottom: 8px;
     height: 24px;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,6 +49,25 @@ body.modal-open .supreme-container {
     -ms-filter: blur(1px);
     filter: blur(1px);
 }
+
+::placeholder {
+    color: white !important;
+}
+
+#exampleFormControlInput1, #basic-addons, #basic-addon1, #floatingSelect, #exampleFormControlTextarea1 {
+    background-color:#383838;
+    border: 1px solid #4a4a4a;
+    color: white !important;
+}
+
+#floatingSelect1::after {
+    background-color: #383838;
+}
+
+#floatingSelect1 {
+    color: gray; !important;
+}
+
 
 .modal {
     --bs-modal-bg: #292929 !important;
@@ -65,6 +85,7 @@ body.modal-open .supreme-container {
 .media-body {
     -ms-flex: 1;
     flex: 1;
+    display: inline;
 }
 
 .card {
@@ -77,6 +98,19 @@ body.modal-open .supreme-container {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card-p {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color:#383838;
+    background-clip: border-box;
+    border: 1px solid #4a4a4a;
     border-radius: 0.25rem;
 }
 
@@ -104,14 +138,27 @@ body.modal-open .supreme-container {
     background-color: #6da29e !important;
 }
 
+.theme-color-3 {
+    background-color:#383838;
+    border: 1px solid #4a4a4a;
+}
+
 .background-box {
     position: absolute;
     z-index: 0;
     background: #000000 url('./images/stars_background.png') repeat top center;
     background-attachment: fixed;
+    padding-right: 3rem;
+    padding-left: 3rem;
     top: 0px;
-    padding: 2rem;
     height: 100%;
+}
+
+@media (min-width: 1228px) {
+    .background-box {
+        padding-right: 12rem !important;
+        padding-left:  12rem !important;
+    }
 }
 
 .blur {
@@ -140,19 +187,24 @@ body.modal-open .supreme-container {
     margin: 3px;
 }
 
+.gutters {
+    --bs-gutter-x: 5rem;
+}
+
 #about-me {
     margin-top: 27rem;
     z-index: 1;
 }
 
 #about-me img {
-    width: 10%;
+    width: 20%;
     margin-bottom: 10px;
     margin-right: 18px;
 }
 
 #projects {
     margin-top: 4rem;
+    margin-right: 4rem;
     z-index: 1;
 }
 
@@ -168,9 +220,13 @@ body.modal-open .supreme-container {
     margin-top: 4rem;
 }
 
+#send-button {
+    width: 6rem;
+}
+
 #footer-id {
     margin-top: 4rem !important;
-    margin-bottom: 4rem !important;
+    margin-bottom: 2rem !important;
 }
 
 /* End of Custom Code */
