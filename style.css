@@ -161,8 +161,7 @@ body.modal-open .supreme-container {
 }
 
 #tools img {
-    -webkit-width: 40px;
-    -width: 40px;
+    width: 40px;
 }
 
 #contact-me {
