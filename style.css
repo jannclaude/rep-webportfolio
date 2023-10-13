@@ -54,7 +54,7 @@ body.modal-open .supreme-container {
     color: white !important;
 }
 
-#exampleFormControlInput1, #basic-addons, #basic-addon1, #floatingSelect, #exampleFormControlTextarea1 {
+#exampleFormControlInput1, #exampleFormControlInput2, #basic-addons, #basic-addon1, #floatingSelect, #exampleFormControlTextarea1 {
     background-color:#383838;
     border: 1px solid #4a4a4a;
     color: white !important;
@@ -165,10 +165,10 @@ body.modal-open .supreme-container {
     -webkit-mask-image: linear-gradient(black, black, transparent);
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    height: 28vh;
+    height: 35vh;
     width: 100vw;
     left: -0.5rem;
-    top: -2rem;
+    top: -4rem;
     position: absolute;
     object-fit: fill;
     overflow: hidden;
