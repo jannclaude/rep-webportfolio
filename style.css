@@ -38,41 +38,79 @@ a:hover::before {
     height: 24px;
 }
 
-html {
-  scroll-behavior: smooth;
+select, option {
+  font-family: 'fontAwesome', 'DM Sans' !important ;
 }
 
-body.modal-open .supreme-container {
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -o-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(1px);
+html {
+  scroll-behavior: smooth;
 }
 
 ::placeholder {
     color: white !important;
 }
 
-#exampleFormControlInput1, #exampleFormControlInput2, #basic-addons, #basic-addon1, #floatingSelect, #exampleFormControlTextarea1 {
+#social-button, #exampleFormControlInput1, #exampleFormControlInput2, #basic-addons, #basic-addon1, #floatingSelect, #exampleFormControlTextarea1 {
     background-color:#383838;
     border: 1px solid #4a4a4a;
     color: white !important;
 }
 
-#floatingSelect1::after {
+#floating1::after {
     background-color: #383838;
 }
 
-#floatingSelect1 {
+#floating1 {
     color: gray; !important;
 }
 
+.square-width {
+    width: 40px !important;
+}
+
+.form-select1 {
+    border: 0px !important;
+    border-color: none;
+}
 
 .modal {
     --bs-modal-bg: #292929 !important;
     --bs-modal-header-border-color: #4a4a4a !important;
     --bs-modal-footer-border-color: #4a4a4a !important;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.modal-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --bs-modal-margin: 2rem;
+}
+
+.modal-body {
+    --bs-modal-padding: 2rem;
+}
+
+.dropdown-toggle::after {
+    color: white;
+}
+
+#modalDiv::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    backdrop-filter: blur(4px);
+    z-index: -1;
 }
 
 .media {
@@ -192,8 +230,13 @@ body.modal-open .supreme-container {
     --bs-gutter-x: 5rem;
 }
 
+.form-select {
+    color: #FFFFFF! important;
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+}
+
 #about-me {
-    margin-top: 27rem;
+    margin-top: 28rem;
     z-index: 1;
 }
 
@@ -296,6 +339,7 @@ body.modal-open .supreme-container {
     position: relative;
     transform-style: preserve-3d;
     perspective: 1000px;
+    margin-top: 200px;
 }
 
 #landing .card {
@@ -304,7 +348,7 @@ body.modal-open .supreme-container {
     width: 100%;
     padding: 5px;
     background: linear-gradient(375deg, #d3e6da, #ededed);
-    margin-top: 150px;
+/*    margin-top: 150px;*/
     border-radius: 10px;
     transform: translateY(0deg);
     transform-style: preserve-3d;

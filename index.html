@@ -12,6 +12,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,1000&family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
 
+	<!-- Web Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="./style.css">
 
@@ -188,34 +191,41 @@
 								<input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Email Address*">
 							</div>
 							<div class="input-group mb-3">
-								<span class="input-group-text" id="basic-addon1">@</span>
-								<input id="basic-addons" type="text" class="form-control" placeholder="Social Media Handle" aria-label="Username" aria-describedby="basic-addon1">
+								<span id="basic-addons" class="input-group-text iframe ps-1 pe-1">
+									<select class="form-select1 square-width" id="floatingSelect">
+										<option value="fa-twitter" selected>&nbsp;&#xf099;&nbsp;</option>
+										<option value="fa-instagram">&nbsp;&#xf16d;&nbsp;</option>
+										<option value="fa-facebook">&nbsp;&#xf082;&nbsp;</option>
+									</select>
+								</span>
+								<span id="basic-addons" class="input-group-text">@</span>
+								<input id="basic-addons" type="text" class="form-control" placeholder="Username" aria-label="Dollar amount (with dot and two decimal places)">
 							</div>
-							<div class="form-floating mb-3 mt-4">
-								<select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+							<div class="form-floating mb-3 mt-2">
+								<select class="form-select dropdown-toggle" id="floatingSelect" aria-label="Floating label select example">
 									<option value="1" selected>Web Development</option>
 									<option value="2">Consulting</option>
 									<option value="3">Collaboration</option>
 									<option value="4">General</option>
 								</select>
-								<label id="floatingSelect1" for="floatingSelect">Choose an Enquiry</label>
+								<label id="floating1" for="floatingSelect">Choose an Enquiry</label>
 							</div>
 							<div class="form-group mb-3">
 								<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Write message..."></textarea>
 							</div>
 							<button id="send-button" type="button" class="btn text-white theme-color-2 float-end" data-toggle="modal" data-target="#modalDiv">Send</button>
 
-							<div id="modalDiv" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div id="modalDiv" class="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 								<div class="modal-dialog">
-									<div class="modal-content">
+									<div class="modal-content m-sm-2">
 										<div class="modal-header">
-											<h5 class="modal-title fs-5 text-white">Enquiry Sent!</h5>
+											<h5 class="modal-title fs-5 text-white">Thank You!</h5>
 											<button type="button" class="btn-close btn-close-white" data-dismiss="modal" aria-label="Close">
 												<!-- <span aria-hidden="true">&times;</span> -->
 											</button>
 										</div>
 										<div class="modal-body text-white">
-											<p>Thank you for reaching out. Your enquiry is acknowledged. I hope you have a great day! </p>
+											<p>Thank you for reaching out! 🚀 Your message has successfully zoomed into my inbox. I'll get back to you faster than a rocket launch! In the meantime, feel free to explore my web portfolio for more exciting content. Have an awesome day!</p>
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn theme-color-2" data-dismiss="modal">Close</button>
