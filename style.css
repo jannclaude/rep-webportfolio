@@ -65,8 +65,13 @@ html {
 }
 
 .square-width {
-    width: 40px !important;
+    width: 50px !important;
 }
+
+.square-height {
+    height: 38px !important;
+}
+
 
 .form-select1 {
     border: 0px !important;
