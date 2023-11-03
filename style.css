@@ -189,6 +189,42 @@ html {
 .theme-color-3 {
     background-color:#383838;
     border: 1px solid #4a4a4a;
+    width: 10px;
+}
+
+#tools .progress {
+    position: relative;
+	height: 30px;
+    width: 180px;
+    background-color: #383838;
+    border: 1px solid #4a4a4a;
+}
+
+.img-tools {
+    width: 24px !important;
+    vertical-align: middle;
+    margin-bottom: 1px;
+    
+}
+
+.progress > .progress-type {
+	position: absolute;
+	left: 0px;
+	font-weight: 400;
+	padding: 4px 30px 2px 5px;
+	color: rgb(255, 255, 255);
+	/* background-color: rgba(25, 25, 25, 0.2); */
+}
+
+.progress-bar {
+    background-color: #6da29e !important;
+}
+
+.w-90 {
+    width: 90%;
+}
+.w-85 {
+    width: 85%;
 }
 
 .background-box {
@@ -206,6 +242,14 @@ html {
     .background-box {
         padding-right: 12rem !important;
         padding-left:  12rem !important;
+    }
+}
+
+@media (max-width: 992px) {
+    #tools .progress {
+        position: relative;
+        height: 30px;
+        width: 290px;
     }
 }
 
@@ -277,6 +321,7 @@ html {
 
 #contact-link {
     width: 6rem;
+    margin-bottom: 1.25rem;
 }
 
 #footer-id {
