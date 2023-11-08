@@ -78,30 +78,6 @@ html {
     height: auto !important;
 }
 
-.modal {
-    --bs-modal-bg: #292929 !important;
-    --bs-modal-header-border-color: #4a4a4a !important;
-    --bs-modal-footer-border-color: #4a4a4a !important;
-    position: relative;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.modal-dialog {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    --bs-modal-margin: 2rem;
-}
-
-.modal-body {
-    --bs-modal-padding: 2rem;
-}
-
 .dropdown-toggle::after {
     color: white;
 }
@@ -233,7 +209,7 @@ html {
     z-index: 0;
     background: #000000 url('./images/stars_background.png') repeat top center;
     background-attachment: fixed;
-    width: fit-content;
+    width: 100%;
     padding-right: 3rem;
     padding-left: 3rem;
     top: 0px;
