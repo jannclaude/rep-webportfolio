@@ -40,7 +40,7 @@ function updateViewport() {
 	const metaTag = document.querySelector('meta[name="viewport"]');
 	
 	if (window.matchMedia('(max-width: 992px)').matches) {
-	  metaTag.setAttribute('content', 'width=device-width, initial-scale=0.95');
+	  metaTag.setAttribute('content', 'width=device-width, initial-scale=0.9');
 	} else {
 	  metaTag.setAttribute('content', 'width=device-width, initial-scale=1');
 	}
