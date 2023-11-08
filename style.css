@@ -227,7 +227,15 @@ html {
     #tools .progress {
         position: relative;
         height: 30px;
-        width: 290px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    #tools .progress {
+        position: relative;
+        height: 30px;
+        width: 200px;
     }
 }
 
@@ -266,6 +274,17 @@ html {
 .form-select {
     color: #FFFFFF! important;
     --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+}
+
+.custom-media-body {
+    width: 100%;
+}
+
+toolset {
+    margin-left: 5rem !important;
+    margin-right: 5rem !important;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
 }
 
 #about-me {
