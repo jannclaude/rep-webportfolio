@@ -36,16 +36,16 @@ function stoppedTyping() {
 	}
 }
 
-function updateViewport() {
-	const metaTag = document.querySelector('meta[name="viewport"]');
+// function updateViewport() {
+// 	const metaTag = document.querySelector('meta[name="viewport"]');
 	
-	if (window.matchMedia('(max-width: 992px)').matches) {
-	  metaTag.setAttribute('content', 'width=device-width, initial-scale=0.9');
-	} else {
-	  metaTag.setAttribute('content', 'width=device-width, initial-scale=1');
-	}
-  }
+// 	if (window.matchMedia('(max-width: 992px)').matches) {
+// 	  metaTag.setAttribute('content', 'width=device-width, initial-scale=0.9');
+// 	} else {
+// 	  metaTag.setAttribute('content', 'width=device-width, initial-scale=1');
+// 	}
+//   }
 
-  updateViewport();
+//   updateViewport();
 
-  window.addEventListener('resize', updateViewport);
+//   window.addEventListener('resize', updateViewport);

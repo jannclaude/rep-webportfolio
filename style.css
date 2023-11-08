@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-size: 1rem
 }
 
 /* Custom Code */
@@ -234,6 +233,7 @@ html {
     z-index: 0;
     background: #000000 url('./images/stars_background.png') repeat top center;
     background-attachment: fixed;
+    width: fit-content;
     padding-right: 3rem;
     padding-left: 3rem;
     top: 0px;
@@ -257,11 +257,12 @@ html {
 
 .blur {
     -webkit-mask-image: linear-gradient(black, black, transparent);
+    mask-image: linear-gradient(black, black, transparent);
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
     height: 35vh;
     width: 100vw;
-    left: -0.5rem;
+    left: 0;
     top: -4rem;
     position: absolute;
     object-fit: fill;
@@ -304,7 +305,7 @@ html {
 
 #projects {
     margin-top: 4rem;
-    margin-right: 4rem;
+    margin-right: 0rem;
     padding-top: 18rem;
     z-index: 1;
 }
