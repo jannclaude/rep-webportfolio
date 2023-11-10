@@ -35,17 +35,3 @@ function stoppedTyping() {
 		link.classList.add('disabled');
 	}
 }
-
-// function updateViewport() {
-// 	const metaTag = document.querySelector('meta[name="viewport"]');
-	
-// 	if (window.matchMedia('(max-width: 992px)').matches) {
-// 	  metaTag.setAttribute('content', 'width=device-width, initial-scale=0.9');
-// 	} else {
-// 	  metaTag.setAttribute('content', 'width=device-width, initial-scale=1');
-// 	}
-//   }
-
-//   updateViewport();
-
-//   window.addEventListener('resize', updateViewport);
