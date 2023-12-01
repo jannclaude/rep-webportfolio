@@ -107,6 +107,11 @@ html {
     display: inline;
 }
 
+.projTag {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
 .card {
     position: relative;
     display: -ms-flexbox;
@@ -127,6 +132,7 @@ html {
     -ms-flex-direction: column;
     flex-direction: column;
     word-wrap: break-word;
+    min-height: 100%;
     background-color:#383838;
     background-clip: border-box;
     border: 1px solid #4a4a4a;
@@ -280,6 +286,15 @@ html {
     width: 100%;
 }
 
+.cardContainer {
+    min-height: 100%;
+}
+
+.col-lg-4 {
+    max-width: 100% !important;
+}
+
+
 toolset {
     margin-left: 5rem !important;
     margin-right: 5rem !important;
@@ -319,7 +334,6 @@ toolset {
 
 #contact-link {
     width: 6rem;
-    margin-bottom: 1.25rem;
 }
 
 #footer-id {
