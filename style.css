@@ -185,16 +185,13 @@ html {
 
 .img-tools {
     width: 24px !important;
-    vertical-align: middle;
-    margin-bottom: 1px;
-    
 }
 
 .progress > .progress-type {
 	position: absolute;
 	left: 0px;
 	font-weight: 400;
-	padding: 4px 30px 2px 5px;
+	padding: 3px 30px 3px 5px;
 	color: rgb(255, 255, 255);
 	/* background-color: rgba(25, 25, 25, 0.2); */
 }
@@ -313,23 +310,22 @@ toolset {
     margin-right: 18px;
 }
 
+#myProjects {
+    padding-top: 10rem;
+}
+
 #projects {
-    margin-top: 4rem;
     margin-right: 0rem;
     padding-top: 18rem;
     z-index: 1;
-}
-
-#tools {
-    margin-top: 4rem;
 }
 
 #tools img {
     width: 40px;
 }
 
-#contact {
-    margin-top: 4rem;
+#contactMe {
+    padding-top: 10rem;
 }
 
 #contact-link {
