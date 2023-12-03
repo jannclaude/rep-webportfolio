@@ -291,14 +291,6 @@ html {
     max-width: 100% !important;
 }
 
-
-toolset {
-    margin-left: 5rem !important;
-    margin-right: 5rem !important;
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
-}
-
 #about-me {
     padding-top: 18rem;
     z-index: 1;
@@ -311,6 +303,7 @@ toolset {
 }
 
 #myProjects {
+    -webkit-padding-before: 10rem;
     padding-top: 10rem;
 }
 
@@ -325,6 +318,7 @@ toolset {
 }
 
 #contactMe {
+    -webkit-padding-before: 10rem;
     padding-top: 10rem;
 }
 
