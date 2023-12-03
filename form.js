@@ -35,3 +35,21 @@ function stoppedTyping() {
 		link.classList.add('disabled');
 	}
 }
+
+function setHrefBasedOnScreenSize() {
+    var contactLink = document.getElementById('contactLink');
+
+    if (window.innerWidth < 993) {
+      // Set href for smaller screens
+      contactLink.href = '#contact';
+    } else {
+      // Set href for larger screens
+      contactLink.href = '#contactMe';
+    }
+  }
+
+  // Initial call to set href based on current screen size
+  setHrefBasedOnScreenSize();
+
+  // Add event listener for window resize to update href dynamically
+  window.addEventListener('resize', setHrefBasedOnScreenSize);
